@@ -1,6 +1,6 @@
 {
-    "coin": "ducknote",
-    "symbol": "XDN",
+    "coin": "mynt",
+    "symbol": "XSM",
     "coinUnits": 1000000000000,
     "coinDifficultyTarget": 60,
 
