@@ -1,10 +1,10 @@
-var api = "http://poolhost.com:1117";
+var api = "http://127.0.0.1:1117";
 
-var poolHost = "poolhost.com";
+var poolHost = "Coinmine.network";
 
-var irc = "irc.freenode.net/#poolhost";
+var irc = "irc.freenode.net/#mynt-pools";
 
-var email = "support@poolhost.com";
+var email = "support@Coinmine.network";
 
 var cryptonatorWidget = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR"];
 
