@@ -76,7 +76,7 @@
         "enabled": true,
         "interval": 600,
         "maxAddresses": 50,
-        "mixin": 2,
+        "mixin": 3,
         "transferFee": 5000000000,
         "minPayment": 1000000000000,
         "maxTransactionAmount": 1000000000000000000000000,
@@ -86,7 +86,7 @@
     "blockUnlocker": {
         "enabled": true,
         "interval": 30,
-        "depth": 50,
+        "depth": 60,
         "poolFee": 2,
         "devDonation": 0.2,
         "coreDevDonation": 0.2,
