@@ -19,7 +19,7 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "XSwRfoQD88BSmCG1SNm6QLcFUUKJGjGm2ZBCcCt4PhtE5dctgd48RQvRKtHywFojnEWsnv6AZ57KgUBXYJhvzvpg2JMuCaKWy",
+        "poolAddress": "XSwVkm6aNxF5561yAeAssYZijk5op57G342vdniS7zYBB5tMtJci9pCAfw6wsGNwopHHoDRLfZNA5BbAw8xjHYfW2jaA2VBPs",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "ports": [
@@ -76,10 +76,10 @@
         "enabled": true,
         "interval": 600,
         "maxAddresses": 50,
-        "mixin": 3,
+        "mixin": 2,
         "transferFee": 5000000000,
-        "minPayment": 100000000000,
-        "maxTransactionAmount": 100000000000000,
+        "minPayment": 1000000000000,
+        "maxTransactionAmount": 1000000000000000000000000,
         "denomination": 100000000000
     },
 
