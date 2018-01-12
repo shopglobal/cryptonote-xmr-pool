@@ -445,8 +445,8 @@
     function calcEstimateProfit(){
         try {
             var rateUnit = Math.pow(1024,parseInt($('#calcHashUnit').data('mul')));
-            var hashRate = parseFloat($('#calcHashRate').val()) * rateUnit;
-            var profit = (hashRate * 86400 / lastStats.network.difficulty) * lastStats.network.reward;
+            var hashRate = parseFloat($('#calcHashRate').val()) * rateUnit * 86400;
+            var profit = (hashRate / lastStats.network.difficulty) * lastStats.network.reward / 24;
             if (profit) {
                 updateText('calcHashAmount', getReadableCoins(profit, 2, true));
                 return;
