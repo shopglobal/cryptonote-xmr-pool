@@ -23,35 +23,39 @@
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "ports": [
-            {
+            {	"port": 1111,
+		"difficulty": 25000,
+		"desc": "Javascript Web Miners"
+	    },
+	    {
                 "port": 3333,
-                "difficulty": 100,
+                "difficulty": 35000,
                 "desc": "Low end hardware"
             },
             {
                 "port": 5555,
-                "difficulty": 2000,
+                "difficulty": 45000,
                 "desc": "Mid range hardware"
             },
             {
                 "port": 7777,
-                "difficulty": 10000,
+                "difficulty": 100000,
                 "desc": "High end hardware"
             },
             {
-                "port": 8888,
-                "difficulty": 10000,
+                "port": 8889,
+                "difficulty": 25000,
                 "desc": "Hidden port",
                 "hidden": true
             }
         ],
         "varDiff": {
-            "minDiff": 2,
-            "maxDiff": 100000,
+            "minDiff": 25000,
+            "maxDiff": 3000000,
             "targetTime": 100,
             "retargetTime": 30,
             "variancePercent": 30,
-            "maxJump": 100
+            "maxJump": 120
         },
         "fixedDiff": {
             "enabled": true,
@@ -74,12 +78,12 @@
 
     "payments": {
         "enabled": true,
-        "interval": 600,
+        "interval": 10,
         "maxAddresses": 50,
         "mixin": 3,
-        "transferFee": 5000000000,
+        "transferFee": 140000000000,
         "minPayment": 1000000000000,
-        "maxTransactionAmount": 1000000000000000000000000,
+        "maxTransactionAmount": 100000000000000,
         "denomination": 100000000000
     },
 
@@ -87,7 +91,7 @@
         "enabled": true,
         "interval": 30,
         "depth": 60,
-        "poolFee": 2,
+        "poolFee": 20,
         "devDonation": 0.2,
         "coreDevDonation": 0.2,
         "extraFeaturesDevDonation":0.1
@@ -100,21 +104,21 @@
         "port": 8117,
         "blocks": 30,
         "payments": 30,
-        "ssl": true,
+        "ssl": false,
         "sslport": 8119,
         "sslcert": "./keys/cert.pem",
         "sslkey": "./keys/privkey.pem",
         "sslca": "./keys/chain.pem",
-        "password": "lets_connect"
+        "password": "vsend_mynt"
     },
 
     "daemon": {
-        "host": "127.0.0.1",
+        "host": "128.199.85.61",
         "port": 24091
     },
 
     "wallet": {
-        "host": "127.0.0.1",
+        "host": "46.101.40.29",
         "port": 3000
     },
 
@@ -125,11 +129,11 @@
 
     "monitoring": {
         "daemon": {
-            "checkInterval": 60,
+            "checkInterval": 30,
             "rpcMethod": "getblockcount"
         },
         "wallet": {
-            "checkInterval": 60,
+            "checkInterval": 45,
             "rpcMethod": "getbalance"
         }
     },
