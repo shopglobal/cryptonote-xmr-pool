@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 git clone https://github.com/shopglobal/cryptonote-universal-pool cnpool 
 cd cnpool 
 git pull origin master
