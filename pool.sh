@@ -7,3 +7,4 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | b
 nvm install 0.10.48
 nvm use 0.10.48 && npm install
 echo 'DONE, ready for action'
+exit
