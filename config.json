@@ -80,7 +80,7 @@
         "enabled": true,
         "interval": 10,
         "maxAddresses": 50,
-        "mixin": 3,
+        "mixin": 5,
         "transferFee": 140000000000,
         "minPayment": 1000000000000,
         "maxTransactionAmount": 100000000000000,
@@ -118,8 +118,8 @@
     },
 
     "wallet": {
-        "host": "46.101.40.29",
-        "port": 3000
+        "host": "127.0.0.1",
+        "port": 4020
     },
 
     "redis": {
