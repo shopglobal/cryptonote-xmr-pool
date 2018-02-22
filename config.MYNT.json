@@ -23,46 +23,39 @@
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "ports": [
-            {
-                "port": 443,
-                "difficulty": 100000,
-                "desc": "SSL",
-                "type": "SSL"
-            },
-            {
-                "port": 1111,
-                "difficulty": 25000,
-                "desc": "High end hardware"
-            },
-            {
+            {	"port": 1111,
+		"difficulty": 25000,
+		"desc": "Javascript Web Miners"
+	    },
+	    {
                 "port": 3333,
-                "difficulty": 25000,
+                "difficulty": 35000,
                 "desc": "Low end hardware"
             },
             {
                 "port": 5555,
-                "difficulty": 50000,
+                "difficulty": 45000,
                 "desc": "Mid range hardware"
             },
             {
                 "port": 7777,
-                "difficulty": 200000,
+                "difficulty": 100000,
                 "desc": "High end hardware"
             },
             {
-                "port": 2222,
-                "difficulty": 30000,
+                "port": 8889,
+                "difficulty": 25000,
                 "desc": "Hidden port",
                 "hidden": true
             }
         ],
         "varDiff": {
             "minDiff": 25000,
-            "maxDiff": 1000000,
+            "maxDiff": 3000000,
             "targetTime": 100,
             "retargetTime": 30,
             "variancePercent": 30,
-            "maxJump": 100
+            "maxJump": 120
         },
         "fixedDiff": {
             "enabled": true,
@@ -85,9 +78,9 @@
 
     "payments": {
         "enabled": true,
-        "interval": 60,
+        "interval": 10,
         "maxAddresses": 50,
-        "mixin": 3,
+        "mixin": 5,
         "transferFee": 140000000000,
         "minPayment": 1000000000000,
         "maxTransactionAmount": 100000000000000,
@@ -111,12 +104,12 @@
         "port": 8117,
         "blocks": 30,
         "payments": 30,
-        "ssl": true,
+        "ssl": false,
         "sslport": 8119,
         "sslcert": "./keys/cert.pem",
         "sslkey": "./keys/privkey.pem",
         "sslca": "./keys/chain.pem",
-        "password": "lets_connect"
+        "password": "vsend_mynt"
     },
 
     "daemon": {
@@ -126,7 +119,7 @@
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 3000
+        "port": 4020
     },
 
     "redis": {
@@ -136,11 +129,11 @@
 
     "monitoring": {
         "daemon": {
-            "checkInterval": 60,
+            "checkInterval": 30,
             "rpcMethod": "getblockcount"
         },
         "wallet": {
-            "checkInterval": 60,
+            "checkInterval": 45,
             "rpcMethod": "getbalance"
         }
     },
