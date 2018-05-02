@@ -1,4 +1,4 @@
-var api = "http://127.0.0.1:8117";
+var api = "//165.227.189.226:8117";
 var coinUnits = 1000000000000;
 var poolHost = "Coinmine.network";
 
@@ -8,10 +8,10 @@ var email = "support@Coinmine.network";
 
 var cryptonatorWidget = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR"];
 
-var easyminerDownload = "https://github.com/zone117x/cryptonote-easy-miner/releases/";
+var easyminerDownload = "#";
 
-var blockchainExplorer = "http://chainradar.com/{symbol}/block/{id}";
+var blockchainExplorer = "https://explorer.myntpulse.com/block/{id}";
 
-var transactionExplorer = "http://chainradar.com/{symbol}/transaction/{id}";
+var transactionExplorer = "https://explorer.myntpulse.com/txid/{id}";
 
 var themeCss = "themes/default-theme.css";
